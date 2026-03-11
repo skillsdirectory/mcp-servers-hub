@@ -58,10 +58,10 @@ User asks: "Analyze our sales data and write a report"
 |---|---|---|---|
 | **Postgres MCP** | Query & manage PostgreSQL databases | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) |
 | **SQLite MCP** | Local SQLite database operations | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) |
-| **MongoDB MCP** | MongoDB database queries & collections | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
-| **MySQL MCP** | MySQL database queries & management | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **MongoDB MCP** | MongoDB database queries & collections | TypeScript | [GitHub](https://github.com/mongodb-js/mongodb-mcp-server) |
+| **MySQL MCP** | MySQL database queries & management | Python | [GitHub](https://github.com/designcomputer/mysql_mcp_server) |
 | **Supabase MCP** | Full Supabase — auth, storage, database, edge functions | TypeScript | [GitHub](https://github.com/supabase/mcp) |
-| **Redis MCP** | Redis cache and data store operations | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **Redis MCP** | Redis cache and data store operations | Python | [GitHub](https://github.com/redis/mcp-redis) |
 | **Neon MCP** | Serverless Postgres with branching | TypeScript | [GitHub](https://github.com/neondatabase/mcp-server-neon) |
 
 ### 🌐 Web & Scraping
@@ -70,7 +70,7 @@ User asks: "Analyze our sales data and write a report"
 |---|---|---|---|
 | **Firecrawl MCP** | Advanced web scraping & crawling | TypeScript | [GitHub](https://github.com/mendableai/firecrawl-mcp-server) |
 | **Puppeteer MCP** | Browser automation & web scraping | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) |
-| **Playwright MCP** | Cross-browser automation & testing | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **Playwright MCP** | Cross-browser automation & testing | TypeScript | [GitHub](https://github.com/microsoft/playwright-mcp) |
 | **Brave Search MCP** | Web search via Brave Search API | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) |
 | **Browserbase MCP** | Cloud browser automation | TypeScript | [GitHub](https://github.com/browserbase/mcp-server-browserbase) |
 
@@ -78,9 +78,9 @@ User asks: "Analyze our sales data and write a report"
 
 | Server | Description | Language | Links |
 |---|---|---|---|
-| **GitHub MCP** | Repos, issues, PRs, actions management | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/github) |
-| **GitLab MCP** | GitLab projects & CI/CD integration | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
-| **Docker MCP** | Container management & orchestration | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **GitHub MCP** | Repos, issues, PRs, actions management | Go | [GitHub](https://github.com/github/github-mcp-server) |
+| **GitLab MCP** | GitLab projects & CI/CD integration | TypeScript | [GitLab](https://gitlab.com/gitlab-org/editor-extensions/gitlab-mcp-server) |
+| **Docker MCP** | Container management & orchestration | Go | [GitHub](https://github.com/docker/docker-mcp) |
 | **Figma MCP** | Design file access & context | TypeScript | [GitHub](https://github.com/nickarora/figma-context-mcp) |
 | **Sentry MCP** | Error tracking & monitoring | TypeScript | [GitHub](https://github.com/getsentry/sentry-mcp) |
 | **Linear MCP** | Issue tracking & project management | TypeScript | [GitHub](https://github.com/linearapp/linear-mcp-server) |
@@ -90,7 +90,7 @@ User asks: "Analyze our sales data and write a report"
 | Server | Description | Language | Links |
 |---|---|---|---|
 | **Slack MCP** | Messages, channels & workspace mgmt | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/slack) |
-| **Notion MCP** | Pages, databases & blocks | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **Notion MCP** | Pages, databases & blocks | TypeScript | [GitHub](https://github.com/makenotion/notion-mcp-server) |
 | **Google Drive MCP** | File access, search & management | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) |
 | **Google Maps MCP** | Geocoding, directions & places API | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) |
 
@@ -106,7 +106,7 @@ User asks: "Analyze our sales data and write a report"
 | Server | Description | Language | Links |
 |---|---|---|---|
 | **Filesystem MCP** | Local file read/write operations | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
-| **S3 MCP** | AWS S3 bucket management | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| **S3 MCP** | AWS S3 bucket management | Python | [GitHub](https://github.com/awslabs/mcp) |
 | **Memory MCP** | Persistent knowledge graph storage | TypeScript | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
 
 ### 🧠 AI & ML
