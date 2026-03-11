@@ -1124,14 +1124,448 @@ Add any MCP server to your AI tool by editing the config file:
 
 ---
 
+### ☁️ Cloud & Infrastructure (5 servers)
+
+#### 51. Google Cloud Run MCP — *by Google Cloud*
+> Deploy & manage services on Google Cloud Run
+> 
+> 🔗 [GitHub](https://github.com/GoogleCloudPlatform/cloud-run-mcp) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "cloud-run": {
+      "command": "uvx",
+      "args": ["cloud-run-mcp"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/credentials.json",
+        "GOOGLE_CLOUD_PROJECT": "your-project-id"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 52. Azure DevOps MCP — *by Microsoft*
+> Manage Azure DevOps projects, repos, pipelines & work items
+> 
+> 🔗 [GitHub](https://github.com/microsoft/azure-devops-mcp) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/azure-devops-mcp"],
+      "env": {
+        "AZURE_DEVOPS_ORG": "your-org",
+        "AZURE_DEVOPS_PAT": "your-personal-access-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 53. Render MCP — *by Render*
+> Spin up services, query databases & access metrics/logs
+> 
+> 🔗 [Website](https://render.com/docs/mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "render": {
+      "command": "npx",
+      "args": ["-y", "@render/mcp-server"],
+      "env": {
+        "RENDER_API_KEY": "your-render-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 54. Hostinger MCP — *by Hostinger*
+> Manage hosting services via Hostinger API
+> 
+> 🔗 [GitHub](https://github.com/hostinger/api-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "hostinger": {
+      "command": "npx",
+      "args": ["-y", "@hostinger/mcp-server"],
+      "env": {
+        "HOSTINGER_API_TOKEN": "your-hostinger-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 55. E2B MCP — *by E2B*
+> Run code in secure cloud sandboxes
+> 
+> 🔗 [GitHub](https://github.com/e2b-dev/mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "e2b": {
+      "command": "npx",
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": {
+        "E2B_API_KEY": "your-e2b-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+### 📊 Monitoring & Observability (5 servers)
+
+#### 56. Axiom MCP — *by Axiom*
+> Query & analyze logs, traces and event data in natural language
+> 
+> 🔗 [GitHub](https://github.com/axiomhq/mcp-server-axiom) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "axiom": {
+      "command": "npx",
+      "args": ["-y", "@axiomhq/mcp-server"],
+      "env": {
+        "AXIOM_TOKEN": "your-axiom-token",
+        "AXIOM_ORG_ID": "your-org-id"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 57. Logfire MCP — *by Pydantic*
+> Access OpenTelemetry traces & metrics through Logfire
+> 
+> 🔗 [GitHub](https://github.com/pydantic/logfire-mcp) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "logfire": {
+      "command": "uvx",
+      "args": ["logfire-mcp"],
+      "env": {
+        "LOGFIRE_TOKEN": "your-logfire-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 58. SonarQube MCP — *by SonarSource*
+> Code quality analysis, vulnerability detection & security scanning
+> 
+> 🔗 [GitHub](https://github.com/SonarSource/sonarqube-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "sonarqube": {
+      "command": "npx",
+      "args": ["-y", "@sonarsource/sonarqube-mcp-server"],
+      "env": {
+        "SONARQUBE_URL": "http://localhost:9000",
+        "SONARQUBE_TOKEN": "your-sonar-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 59. Semgrep MCP — *by Semgrep*
+> Secure code with static analysis & vulnerability scanning
+> 
+> 🔗 [GitHub](https://github.com/semgrep/mcp) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "semgrep": {
+      "command": "uvx",
+      "args": ["semgrep-mcp"],
+      "env": {
+        "SEMGREP_APP_TOKEN": "your-semgrep-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 60. Langfuse MCP — *by Langfuse*
+> Prompt management, versioning, evaluation & LLM observability
+> 
+> 🔗 [GitHub](https://github.com/langfuse/mcp-server-langfuse) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "langfuse": {
+      "command": "npx",
+      "args": ["-y", "@langfuse/mcp-server"],
+      "env": {
+        "LANGFUSE_PUBLIC_KEY": "your-public-key",
+        "LANGFUSE_SECRET_KEY": "your-secret-key",
+        "LANGFUSE_HOST": "https://cloud.langfuse.com"
+      }
+    }
+  }
+}
+```
+
+---
+
+### 🛒 E-Commerce & Marketplace (5 servers)
+
+#### 61. Square MCP — *by Square*
+> Payments, catalog, inventory & point-of-sale management
+> 
+> 🔗 [GitHub](https://github.com/square/square-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "square": {
+      "command": "npx",
+      "args": ["-y", "@square/mcp-server"],
+      "env": {
+        "SQUARE_ACCESS_TOKEN": "your-square-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 62. Xero MCP — *by Xero*
+> Accounting, invoicing & financial data management
+> 
+> 🔗 [GitHub](https://github.com/XeroAPI/xero-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "xero": {
+      "command": "npx",
+      "args": ["-y", "@xeroapi/mcp-server"],
+      "env": {
+        "XERO_CLIENT_ID": "your-client-id",
+        "XERO_CLIENT_SECRET": "your-client-secret"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 63. Apify MCP — *by Apify*
+> 3,000+ pre-built cloud tools for web scraping & data extraction
+> 
+> 🔗 [GitHub](https://github.com/apify/actors-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "apify": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 64. Bright Data MCP — *by Bright Data*
+> Web data access — scraping, proxies & data collection at scale
+> 
+> 🔗 [GitHub](https://github.com/brightdata/brightdata-mcp) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "brightdata": {
+      "command": "npx",
+      "args": ["-y", "@brightdata/mcp"],
+      "env": {
+        "BRIGHTDATA_API_KEY": "your-brightdata-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 65. Mapbox MCP — *by Mapbox*
+> Geocoding, POI search, directions, isochrones & geospatial intelligence
+> 
+> 🔗 [GitHub](https://github.com/mapbox/mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "mapbox": {
+      "command": "npx",
+      "args": ["-y", "@mapbox/mcp-server"],
+      "env": {
+        "MAPBOX_ACCESS_TOKEN": "your-mapbox-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+### 🔄 Automation & Integration (5 servers)
+
+#### 66. Make MCP — *by Make (Integromat)*
+> Turn Make scenarios into callable tools for AI assistants
+> 
+> 🔗 [GitHub](https://github.com/integromat/make-mcp-server) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "make": {
+      "command": "npx",
+      "args": ["-y", "@make/mcp-server"],
+      "env": {
+        "MAKE_API_TOKEN": "your-make-token"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 67. Meilisearch MCP — *by Meilisearch*
+> Full-text & semantic search engine API
+> 
+> 🔗 [GitHub](https://github.com/meilisearch/meilisearch-mcp) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "meilisearch": {
+      "command": "uvx",
+      "args": ["meilisearch-mcp"],
+      "env": {
+        "MEILI_HTTP_ADDR": "http://localhost:7700",
+        "MEILI_MASTER_KEY": "your-master-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 68. Qdrant MCP — *by Qdrant*
+> Vector search engine — semantic memory & similarity search
+> 
+> 🔗 [GitHub](https://github.com/qdrant/mcp-server-qdrant/) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "qdrant": {
+      "command": "uvx",
+      "args": ["mcp-server-qdrant"],
+      "env": {
+        "QDRANT_URL": "http://localhost:6333",
+        "QDRANT_API_KEY": "your-qdrant-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 69. Kagi Search MCP — *by Kagi*
+> Premium web search via Kagi Search API
+> 
+> 🔗 [GitHub](https://github.com/kagisearch/kagimcp) · 🐍 Python · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "kagi": {
+      "command": "uvx",
+      "args": ["kagimcp"],
+      "env": {
+        "KAGI_API_KEY": "your-kagi-key"
+      }
+    }
+  }
+}
+```
+
+---
+
+#### 70. JetBrains MCP — *by JetBrains*
+> Work on code with IntelliJ IDEA, WebStorm, PyCharm & all JetBrains IDEs
+> 
+> 🔗 [GitHub](https://github.com/JetBrains/mcp-jetbrains) · 📇 TypeScript · 🎖️ Official
+
+```json
+{
+  "mcpServers": {
+    "jetbrains": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/jetbrains-mcp-server"]
+    }
+  }
+}
+```
+
+---
+
 ## 📊 Stats
 
 | Metric | Count |
 |---|---|
-| **Total MCP Servers** | 50+ |
-| **Categories** | 10 |
-| **With Install Guides** | ✅ All 50 |
-| **Official (🎖️)** | 28 |
+| **Total MCP Servers** | 70+ |
+| **Categories** | 14 |
+| **With Install Guides** | ✅ All 70 |
+| **Official (🎖️)** | 48 |
 | **Protocol** | [Model Context Protocol](https://modelcontextprotocol.io) |
 
 ---
@@ -1217,16 +1651,18 @@ Know a great MCP server? Add it to the list!
 > - This repository is **NOT** affiliated with, endorsed by, sponsored by, or associated with **any** of the companies, organizations, or products referenced herein, including but not limited to:
 >   - **Anthropic** (Model Context Protocol, Claude)
 >   - **MongoDB, ClickHouse, Turso, CockroachDB, Neo4j, Prisma** (Databases)
->   - **Supabase, Neon, Redis** (Database platforms)
->   - **Stripe, Dodo Payments, PayPal** (Payment providers)
->   - **GitHub / Microsoft, GitLab, CircleCI** (Developer platforms)
->   - **Docker, Cloudflare, Grafana** (Infrastructure & Monitoring)
->   - **Google / Alphabet** (Drive, Maps)
+>   - **Supabase, Neon, Redis, Meilisearch, Qdrant** (Database & Search platforms)
+>   - **Stripe, Dodo Payments, PayPal, Square, Xero** (Payments & Finance)
+>   - **GitHub / Microsoft, GitLab, CircleCI, JetBrains** (Developer platforms)
+>   - **Docker, Cloudflare, Grafana, Render, Hostinger, E2B** (Infrastructure)
+>   - **Google / Alphabet** (Drive, Maps, Cloud Run)
 >   - **Slack / Salesforce, Notion, Webflow** (Productivity)
->   - **Sentry, Linear, Figma, Postman** (Developer tools)
->   - **Brave, EXA, Tavily** (Search)
->   - **Twilio, ElevenLabs, Zapier** (Communication & Automation)
->   - **Amazon / AWS** (Cloud services)
+>   - **Sentry, Linear, Figma, Postman, SonarQube, Semgrep** (Developer tools)
+>   - **Brave, EXA, Tavily, Kagi, Apify, Bright Data** (Search & Data)
+>   - **Twilio, ElevenLabs, Zapier, Make** (Communication & Automation)
+>   - **Amazon / AWS, Microsoft Azure** (Cloud services)
+>   - **Axiom, Langfuse, Logfire, Pydantic** (Observability)
+>   - **Mapbox** (Location services)
 >   - Any other company, tool, service, or MCP server listed in this repository
 > - All product names, trademarks, and registered trademarks are the property of their respective owners. Use of these names is solely for **informational and compatibility purposes** and is considered nominative fair use.
 > - The **Model Context Protocol (MCP)** is an open standard. This repository curates MCP servers independently.
