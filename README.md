@@ -1452,7 +1452,7 @@ Add any MCP server to your AI tool by editing the config file:
 
 ---
 
-### 🔄 Automation & Integration (5 servers)
+### 🔄 Automation & Integration (6 servers)
 
 #### 66. Make MCP — *by Make (Integromat)*
 > Turn Make scenarios into callable tools for AI assistants
@@ -1558,13 +1558,37 @@ Add any MCP server to your AI tool by editing the config file:
 
 ---
 
+#### 71. Xquik MCP - *by Xquik*
+> X data search, extraction, monitoring, webhooks & API workflows
+>
+> 🔗 [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) · [Docs](https://docs.xquik.com/mcp/overview) · 🌐 Remote
+
+```json
+{
+  "mcpServers": {
+    "xquik": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@0.1.38",
+        "https://xquik.com/mcp",
+        "--header",
+        "X-API-Key:${XQUIK_API_KEY}"
+      ]
+    }
+  }
+}
+```
+
+---
+
 ## 📊 Stats
 
 | Metric | Count |
 |---|---|
 | **Total MCP Servers** | 70+ |
 | **Categories** | 14 |
-| **With Install Guides** | ✅ All 70 |
+| **With Install Guides** | ✅ All 71 |
 | **Official (🎖️)** | 48 |
 | **Protocol** | [Model Context Protocol](https://modelcontextprotocol.io) |
 
