@@ -994,7 +994,7 @@ Add any MCP server to your AI tool by editing the config file:
 
 ---
 
-### 🧠 AI & ML (3 servers)
+### 🧠 AI & ML (4 servers)
 
 #### 45. Sequential Thinking MCP — *by Anthropic (Official)*
 > Step-by-step reasoning engine for complex problem solving
@@ -1051,6 +1051,24 @@ Add any MCP server to your AI tool by editing the config file:
         "NEO4J_USER": "neo4j",
         "NEO4J_PASSWORD": "your-password"
       }
+    }
+  }
+}
+```
+
+---
+
+#### 48. openDAW MCP — *by AMEOBIUS*
+> 263 tools for agent-native control of a browser-based digital audio workstation
+> 
+> 🔗 [GitHub](https://github.com/AMEOBIUS/opendaw-mcp) · 🐍 Python · ⭐ 1
+
+```json
+{
+  "mcpServers": {
+    "opendaw": {
+      "command": "pip",
+      "args": ["install", "opendaw-mcp"]
     }
   }
 }
