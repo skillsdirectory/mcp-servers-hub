@@ -440,7 +440,27 @@ Add any MCP server to your AI tool by editing the config file:
 
 ---
 
-### 🛠️ Developer Tools (10 servers)
+### 🛠️ Developer Tools (11 servers)
+
+#### agent-qa MCP — *by vostride*
+> Web/mobile QA with memidex memory and validated self-improvement.
+>
+> 🔗 [GitHub](https://github.com/vostride/agent-qa) · 📇 TypeScript
+
+Requires Node.js 24+. Complete the [project setup](https://vostride.com/docs/agent-qa/quickstart), configure model authentication, and replace the config path below. Model and external-service costs vary. See the [MCP documentation](https://vostride.com/docs/agent-qa/mcp).
+
+```json
+{
+  "mcpServers": {
+    "agent-qa": {
+      "command": "npx",
+      "args": ["-y", "agent-qa", "--config", "/absolute/path/to/project/agent-qa.config.yaml", "mcp"]
+    }
+  }
+}
+```
+
+---
 
 #### 19. GitHub MCP — *by GitHub / Microsoft*
 > Repos, issues, PRs, actions, code search & management
@@ -1562,9 +1582,9 @@ Add any MCP server to your AI tool by editing the config file:
 
 | Metric | Count |
 |---|---|
-| **Total MCP Servers** | 70+ |
+| **Total MCP Servers** | 71+ |
 | **Categories** | 14 |
-| **With Install Guides** | ✅ All 70 |
+| **With Install Guides** | ✅ All 71 |
 | **Official (🎖️)** | 48 |
 | **Protocol** | [Model Context Protocol](https://modelcontextprotocol.io) |
 
